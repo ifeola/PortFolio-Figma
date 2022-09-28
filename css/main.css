@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url(/css/fonts/Brandon/Brandon_bld.otf) format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url(/css/fonts/Brandon/Brandon_reg.otf) format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova", sans-serif;
+  src: url(/css/fonts/Proxima/ProximaNova-Regular.otf) format("opentype");
+  font-weight: normal;
+}
+
+:root {
+  --primary-color: #8000ff;
+  --secondary-color: #0500ff;
+  --accent-color: #8000ff;
+  --white-color: #f2f2f2;
+  --danger-color: #ff0000;
+  --black-color: #0d0c0d;
+  --black-75-color: rgba(13, 12, 13, 0.75);
+  --black-75-color: rgba(13, 12, 13, 0.5);
+  --black-75-color: rgba(13, 12, 13, 0.25);
+  --black-75-color: rgba(13, 12, 13, 0.1);
+  --linear-gradient: linear-gradient(180deg, #7840bf 0%, #0500ff 100%);
+
+  --fz-h1: 11.9rem;
+  --fz-h2: 8.4rem;
+  --fz-h2-light: 8.4rem;
+  --fz-h3: 6rem;
+  --fz-h3-light: 6rem;
+  --fz-h4: 4.2rem;
+  --fz-h5: 3rem;
+  --fz-h6: 1.5rem;
+  --fz-p: 1.5rem;
+
+  --gap-lead: 3.2rem;
+  --gap-link: 8rem;
+
+  --container-padding: 7.9rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
