@@ -1,3 +1,34 @@
+let faqs = document.querySelectorAll(".faq");
+
+faqs.forEach((faq) => {
+  faq.addEventListener("click", (e) => {
+    faq.classList.toggle("open");
+
+    const icon = faq.querySelector(".faq__icon i");
+    if (icon.className === "fas fa-plus") {
+      icon.className = "fas fa-minus";
+    } else {
+      icon.className = "fas fa-plus";
+    }
+  });
+});      
+
+// NavBar
+
+const menuBtn = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector(".right_links");
+
+menuBtn.addEventListener("click", function () {
+  menuBtn.classList.toggle("active");
+  mobileMenu.classList.toggle("active");
+});
+
+mobileMenu.addEventListener("click", function () {
+  mobileMenu.classList.toggle("active");
+  menuBtn.classList.toggle("active");
+});
+
+
 // Toggle tools
 const linkDesign = document.querySelector("#one");
 const linkWeb = document.querySelector("#two");
@@ -30,3 +61,4 @@ function toggle() {
     this.classList.toggle("is-active");
   }
 }
+
