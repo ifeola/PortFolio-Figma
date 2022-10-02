@@ -11,7 +11,7 @@ faqs.forEach((faq) => {
       icon.className = "fas fa-plus";
     }
   });
-});      
+});
 
 // NavBar
 
@@ -28,7 +28,6 @@ mobileMenu.addEventListener("click", function () {
   menuBtn.classList.toggle("active");
 });
 
-
 // Toggle tools
 const linkDesign = document.querySelector("#one");
 const linkWeb = document.querySelector("#two");
@@ -36,15 +35,15 @@ const web = document.querySelector("#web");
 const design = document.querySelector("#design");
 
 linkDesign.addEventListener("click", function () {
-  design.style.transform = "translate(0)";
-  web.style.transform = "translate(200%)";
+  design.style.display = "grid";
+  web.style.display = "none";
   design.style.transitionDelay = "0.4s";
   web.style.transitionDelay = "0s";
 });
 
 linkWeb.addEventListener("click", function () {
-  web.style.transform = "translate(0)";
-  design.style.transform = "translate(200%)";
+  web.style.display = "grid";
+  design.style.display = "none";
   web.style.transitionDelay = "0.4s";
   design.style.transitionDelay = "0s";
 });
@@ -61,4 +60,3 @@ function toggle() {
     this.classList.toggle("is-active");
   }
 }
-
